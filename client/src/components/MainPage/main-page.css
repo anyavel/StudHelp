@@ -1,0 +1,146 @@
+.container-main {
+    background: rgb(0,175,185);
+    background: linear-gradient(160deg, rgba(0,175,185,1) 0%, rgba(60,232,170,1) 100%);
+    height: 100vh;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    width: 14%;
+    align-items: flex-start;
+    
+}
+
+.logo {
+    color: #eaeaea;
+    font-size: 32px;
+    font-family: Didot serif;
+    font-weight: normal;
+    margin-left: 30%;
+}
+
+.menu-items {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 30px;
+    row-gap: 7px;
+}
+
+.container-main {
+    display: flex;
+    column-gap: 5%;
+
+}
+
+.menu-item {
+    background-color: transparent;
+    border-color: transparent;
+    color: #eaeaea;
+    font-size: 22px;
+    cursor: pointer;
+    font-family: Didot serif;
+    font-weight: normal;
+    padding: 3px 0 3px 0;
+    margin-left: 7px;
+}
+
+.board {
+    margin: 10px;
+    background-color: #F5F5F5;
+    opacity: 0.87;
+    width: 86%;
+    border-radius: 20px;
+}
+
+.page-title {
+    color: #008A92;
+    font-size: 30px;
+    font-family: Didot serif;
+    font-weight: bold;
+    padding-left: 35px;
+}
+
+.name-info {
+    color: #545555;
+    font-size: 20px;
+    font-family: Didot serif;
+    font-weight: normal;
+    display: flex;
+    justify-content: space-between;
+    column-gap: 7px;
+    padding: 20px;
+
+}
+
+.top-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.announcement {
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    opacity: 1;
+    border-color: transparent;
+    cursor: pointer;
+
+}
+
+.announcements {
+
+    display: flex;
+    flex-direction: column;
+    margin: 0 15% 0 5%;
+    row-gap: 20px;
+
+}
+
+.announcement-title {
+    color: #3b3838;
+    font-size: 25px;
+    font-family: Didot serif;
+    font-weight: normal;
+    margin: 15px;
+}
+
+.announcement-text {
+    color: #000000;
+    font-size: 15px;
+    font-family: Didot serif;
+    font-weight: normal;
+    margin: 15px;
+}
+
+.add-announcement {
+    border-color: transparent;
+    background-color: #009EA7;
+    width: 63px;
+    border-radius: 50%;
+    color: #FFFFFF;
+    font-size: 50px;
+    cursor: pointer;
+}
+
+.button-add-placement {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 5%;
+
+}
+
+.checked-menu-item {
+    background-color: #F5F5F5;
+    box-shadow: 2px 5px 5px #727171;
+    border-color: transparent;
+    border-radius: 0 10px 10px 0;
+    width: 15px;
+    height: 20px;
+}
+
+.menu-item-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

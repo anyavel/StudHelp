@@ -1,0 +1,132 @@
+.menu {
+    display: flex;
+    flex-direction: column;
+    width: 18%;
+
+}
+
+.logo {
+    color: #eaeaea;
+    font-size: 38px;
+    font-family: Didot serif;
+    font-weight: normal;
+    margin-left: 30%;
+}
+
+.menu-items {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 30px;
+    row-gap: 7px;
+}
+
+.menu-item {
+    background-color: transparent;
+    border-color: transparent;
+    color: #eaeaea;
+    font-size: 30px;
+    cursor: pointer;
+    font-family: Didot serif;
+    font-weight: normal;
+    padding: 3px 0 3px 0;
+    margin-left: 7px;
+}
+
+.container-help {
+    background: rgb(0,175,185);
+    background: linear-gradient(160deg, rgba(0,175,185,1) 0%, rgba(60,232,170,1) 100%);
+    height: 100vh;
+    display: flex;
+    column-gap: 5%;
+}
+
+.board-help {
+    margin: 10px;
+    background-color: #F5F5F5;
+    opacity: 0.9;
+    width: 86%;
+    border-radius: 20px;
+    height: auto;
+}
+
+.help-items-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+    margin-top: 10%;
+    height: inherit;
+}
+
+.help-item {
+    background-color: #FFFFFF;
+    opacity: 1;
+    border-radius: 20px;
+    width: 25%;
+    min-height: 100%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 2px 5px 5px #727171;
+    border-color: transparent;
+    cursor: pointer;
+
+
+}
+
+.help-item-title {
+    color: #008A92;
+    font-size: 25px;
+    font-family: Didot serif;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.page-title {
+    color: #008A92;
+    font-size: 30px;
+    font-family: Didot serif;
+    font-weight: bold;
+    padding-left: 35px;
+}
+
+.name-info {
+    color: #545555;
+    font-size: 20px;
+    font-family: Didot serif;
+    font-weight: normal;
+    display: flex;
+    justify-content: space-between;
+    column-gap: 7px;
+    padding: 20px;
+
+}
+
+.top-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.help-item:hover {
+    box-shadow: 0 0 0 0;
+
+}
+
+.checked-menu-item {
+    background-color: #F5F5F5;
+    box-shadow: 2px 5px 5px #727171;
+    border-color: transparent;
+    border-radius: 0 10px 10px 0;
+    width: 15px;
+    height: 20px;
+}
+
+.menu-item-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 5px;
+}

@@ -1,0 +1,36 @@
+.container-help-article {
+    background: rgb(0,175,185);
+    background: linear-gradient(160deg, rgba(0,175,185,1) 0%, rgba(60,232,170,1) 100%);
+    height: 200vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.article-board {
+    background-color: #F5F5F5;
+    opacity: 0.87;
+    width: 80%;
+    height: 190vh;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.article-title {
+    color: #008A92;
+    font-family: Didot serif;
+    font-weight: bold;
+    margin-left: 40%;
+}
+
+.article-text {
+    margin: 20px 60px 20px 60px;
+}
+
+.article-text li {
+   margin-bottom: 10px;
+}

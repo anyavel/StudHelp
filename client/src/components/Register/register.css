@@ -1,0 +1,93 @@
+.text-container {
+    background: rgb(0,175,185);
+    background: linear-gradient(160deg, rgba(0,175,185,1) 0%, rgba(60,232,170,1) 100%);
+    height: 100vh;
+    width: 42%;
+    border-radius: 0 20px 20px 0;
+
+
+}
+
+.greeting {
+    color: #eaeaea;
+    font-family: Didot serif;
+    font-weight: lighter;
+    font-size: 45px;
+
+}
+
+.login-text {
+    margin-top: 35%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.instructions {
+    color: #eaeaea;
+    font-family: Didot serif;
+    font-weight: lighter;
+    font-size: 25px;
+    padding: 0 10px 0 10px;
+
+}
+
+.back-button {
+    background-color: transparent;
+    border-color: transparent;
+    color: #eaeaea;
+    font-size: 17px;
+    margin-top: 10px;
+    cursor: pointer;
+
+}
+
+.login-title {
+    color: #00AFB9;
+    font-family: Didot serif;
+    font-weight: bold;
+    font-size: 40px;
+    margin-top: 20%;
+}
+
+.login-form-container {
+    width: 58%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.login-page {
+    display: flex;
+
+}
+
+.input {
+    background-color: #F5F5F5;
+    border-radius: 10px;
+    border-color: transparent;
+    height: 30px;
+    width: 300px;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    grid-row-gap: 15px;
+}
+
+.button-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-end;
+    width: inherit;
+}
+
+.button {
+    background-color: transparent;
+    border-color: transparent;
+    color: #00AFB9;
+    font-size: 20px;
+    cursor: pointer;
+}
