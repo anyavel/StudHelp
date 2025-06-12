@@ -1,2 +1,6 @@
 # StudHelp
 Web-app for dormitory residents and administration
+
+The development of technologies and related changes put forward new requirements for the organization of the process of education and accommodation of applicants for higher education. Students often face difficulties in adapting to the new conditions of study and living in dormitories. This makes it necessary to create effective tools that can help them quickly navigate a new environment, receive up-to-date information and easily solve everyday issues. For their part, the administration of the university and dormitories also overcomes certain difficulties associated with the annual organization of the settlement of newly arrived students. One of the tools for solving these problems can be a web application specially designed for applicants, hostel residents and administration.
+
+This web application will facilitate the process of adaptation and accommodation for students, providing users with convenient access to information about accommodation conditions and useful features for daily life in the dormitory. For the administration, the application will improve the process of organizing settlement and communication with residents thanks to a unified system that involves the concentration of work within one software product.
