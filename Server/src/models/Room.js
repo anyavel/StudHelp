@@ -13,6 +13,11 @@ const roomSchema = new Schema({
     students: {
         type: [Schema.Types.ObjectId],
         ref: 'User'
+    },
+    maxPeople: {
+        type: Number,
+        required: true,
+        default: 0
     }
 }, {
     versionKey: false,

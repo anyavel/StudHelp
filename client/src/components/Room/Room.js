@@ -38,22 +38,22 @@ export const Room = () => {
 
     return(
         <div className={"room-container"}>
-            <div className="menu">
-                <h1 className={"logo"}>Stud Help</h1>
-                <div className="menu-items">
-                    <button className={"menu-item"} onClick={handleClickMain}>Головна</button>
-                    <button className={"menu-item"} onClick={handleClickHelp}>Допомога</button>
+            <div className="room-menu">
+                <h1 className={"room-logo"}>Stud Help</h1>
+                <div className="room-menu-items">
+                    <button className={"room-menu-item"} onClick={handleClickMain}>Головна</button>
+                    <button className={"room-menu-item"} onClick={handleClickHelp}>Допомога</button>
                     <div className={"menu-item-container"}>
-                        <input readOnly={true} className={"checked-menu-item"}/>
-                        <button className={"menu-item"} onClick={handleClickRoom}>Кімната</button>
+                        <input readOnly={true} className={"room-checked-menu-item"}/>
+                        <button className={"room-menu-item"} onClick={handleClickRoom}>Кімната</button>
                     </div>
-                    <button className={"menu-item"} onClick={handleClickProfile}>Профіль</button>
+                    <button className={"room-menu-item"} onClick={handleClickProfile}>Профіль</button>
                 </div>
             </div>
             <div className={"board-room"}>
-                <div className={"top-content"}>
-                    <h1 className={"page-title"}>Кімната</h1>
-                    {user && <div className={"name-info"}>
+                <div className={"room-top-content"}>
+                    <h1 className={"room-page-title"}>Кімната</h1>
+                    {user && <div className={"room-name-info"}>
                         <div>{user.firstName}</div>
                         <div>{user.lastName}</div>
                     </div>}

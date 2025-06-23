@@ -1,3 +1,4 @@
+export * from './AdminRequests/AdminRequests';
 export * from './Announcement/AddAnnouncement';
 export * from './Announcement/ViewAnnouncement';
 export * from './Authorization/Authorisation';
@@ -11,3 +12,5 @@ export * from './HelpDocuments/HelpDocuments';
 export * from './HelpStuff/HelpStuff';
 export * from './HelpConditions/HelpConditions';
 export * from './HelpLinks/HelpLinks';
+export * from './RequestPasswordReset/RequestPasswordReset';
+export * from './RestorePassword/RestorePassword';

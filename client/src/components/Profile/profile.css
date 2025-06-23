@@ -6,7 +6,16 @@
     column-gap: 5%;
 }
 
-.menu {
+@media (device-width < 600px) {
+    .room-container {
+        background: #c1e0df;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+}
+
+.profile-menu {
     display: flex;
     flex-direction: column;
     
@@ -14,7 +23,15 @@
 
 }
 
-.logo {
+@media (device-width < 600px) {
+    .profile-menu {
+        display: flex;
+        flex-direction: row;
+
+    }
+}
+
+.profile-logo {
     color: #eaeaea;
     font-size: 38px;
     font-family: Didot serif;
@@ -22,7 +39,18 @@
     margin-left: 30%;
 }
 
-.menu-items {
+@media (device-width < 600px) {
+    .profile-logo {
+        color: #eaeaea;
+        font-size: 1px;
+        font-family: Didot serif;
+        font-weight: normal;
+        margin-left: 0;
+        visibility: hidden;
+    }
+}
+
+.profile-menu-items {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -30,7 +58,14 @@
     row-gap: 7px;
 }
 
-.menu-item {
+@media (device-width < 600px) {
+    .profile-menu-items {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+.profile-menu-item {
     background-color: transparent;
     border-color: transparent;
     color: #eaeaea;
@@ -42,7 +77,49 @@
     margin-left: 7px;
 }
 
-.board-room {
+@media (device-width < 600px) {
+    .profile-menu-item {
+        background-color: transparent;
+        border-color: transparent;
+        color: #08858e;
+        font-size: 15px;
+        cursor: pointer;
+        font-family: Didot serif;
+        font-weight: normal;
+        padding: 3px 0 3px 0;
+        margin-left: 7px;
+    }
+}
+
+@media (device-width <= 450px) and (device-width > 350px) {
+    .profile-menu-item {
+        background-color: transparent;
+        border-color: transparent;
+        color: #08858e;
+        font-size: 18px;
+        cursor: pointer;
+        font-family: Didot serif;
+        font-weight: normal;
+        padding: 3px 0 3px 0;
+        margin-left: 7px;
+    }
+}
+
+@media (device-width < 600px) and (device-width > 450px) {
+    .profile-menu-item {
+        background-color: transparent;
+        border-color: transparent;
+        color: #08858e;
+        font-size: 22px;
+        cursor: pointer;
+        font-family: Didot serif;
+        font-weight: normal;
+        padding: 3px 0 3px 0;
+        margin-left: 7px;
+    }
+}
+
+.profile-board {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -52,6 +129,20 @@
     width: 86%;
     border-radius: 20px;
     height: auto;
+}
+
+@media (device-width < 600px) {
+    .profile-board {
+        background: rgb(0,175,185);
+        background: linear-gradient(160deg, rgba(0,175,185,1) 0%, rgba(60,232,170,1) 100%);
+        margin: 10px 0 0 0;
+        background-color: #F5F5F5;
+        opacity: 100%;
+        width: 100%;
+        border-radius: 0;
+        height: 100vh;
+
+    }
 }
 
 .profile-picture {
@@ -68,6 +159,19 @@
     font-size: 22px;
     margin-top: 5px;
     cursor: pointer;
+}
+
+@media (device-width < 400px) {
+    .change-profile-picture {
+        background-color: transparent;
+        border-color: transparent;
+        color: #545555;
+        font-family: Didot serif;
+        font-weight: normal;
+        font-size: 17px;
+        margin-top: 5px;
+        cursor: pointer;
+    }
 }
 
 .profile-picture-container {
@@ -94,6 +198,16 @@
     margin-bottom: 10px;
 }
 
+@media (device-width < 400px) {
+    .info-label {
+        color: #545555;
+        font-family: Didot serif;
+        font-weight: normal;
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+}
+
 .info-text {
     background-color: #ffffff;
     border-radius: 10px;
@@ -101,6 +215,17 @@
     padding: 5px 10px 5px 10px;
     font-size: 20px;
     width: 100%;
+}
+
+@media (device-width < 400px) {
+    .info-text {
+        background-color: #ffffff;
+        border-radius: 10px;
+        border-color: transparent;
+        padding: 5px 10px 5px 10px;
+        font-size: 17px;
+        width: 100%;
+    }
 }
 
 .profile-info {
@@ -124,6 +249,18 @@
     cursor: pointer;
 }
 
+@media (device-width < 400px) {
+    .profile-button-exit {
+        border-color: transparent;
+        background-color: #e08d8a;
+        color: #ffffff;
+        padding: 5px 20px 5px 20px;
+        border-radius: 12px;
+        font-size: 15px;
+        cursor: pointer;
+    }
+}
+
 .profile-button-save {
     border-color: transparent;
     background-color: #36c0bb;
@@ -132,6 +269,18 @@
     border-radius: 15px;
     font-size: 18px;
     cursor: pointer;
+}
+
+@media (device-width < 400px) {
+    .profile-button-save {
+        border-color: transparent;
+        background-color: #36c0bb;
+        color: #ffffff;
+        padding: 5px 20px 5px 20px;
+        border-radius: 12px;
+        font-size: 15px;
+        cursor: pointer;
+    }
 }
 
 .profile-button-exit:hover {
@@ -147,13 +296,25 @@
 
 }
 
-.checked-menu-item {
+.profile-checked-menu-item {
     background-color: #F5F5F5;
     box-shadow: 2px 5px 5px #727171;
     border-color: transparent;
     border-radius: 0 10px 10px 0;
     width: 15px;
     height: 20px;
+}
+
+@media (device-width < 600px) {
+    .profile-checked-menu-item {
+        background-color: transparent;
+        box-shadow: 2px 5px 5px #727171;
+        border-color: transparent;
+        border-radius: 0 10px 10px 0;
+        width: 1px;
+        height: 2px;
+        visibility: hidden;
+    }
 }
 
 .menu-item-container {

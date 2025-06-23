@@ -1,5 +1,5 @@
-import { apiService } from "./apiService";
-import { urls } from "../configs";
+import {apiService} from "./apiService";
+import {urls} from "../configs";
 
 const accessTokenKey = 'accessToken';
 const refreshTokenKey = 'refreshToken';
@@ -26,7 +26,10 @@ export const authService = {
         }
         return response;
     },
-    me: (query = {}) => apiService.get(urls.auth.me, { params: { ...query } }),
+    requestPasswordReset: async (email) => await apiService.post(urls.auth.forgotPass, {email}),
+    resetPassword: async (password, token) => await apiService.post(urls.auth.resetPass, {password, token}),
+
+    me: (query = {}) => apiService.get(urls.auth.me, {params: {...query}}),
 
     updatePersonalInfo: (data) => apiService.put(urls.auth.personalData, data),
 

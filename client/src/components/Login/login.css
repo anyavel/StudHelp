@@ -1,4 +1,4 @@
-.text-container {
+.login-text-container {
     background: rgb(0,175,185);
     background: linear-gradient(160deg, rgba(0,175,185,1) 0%, rgba(60,232,170,1) 100%);
     height: 100vh;
@@ -8,7 +8,18 @@
 
 }
 
-.greeting {
+@media (device-width < 430px) {
+    .login-text-container {
+        background: rgb(0,175,185);
+        background: linear-gradient(160deg, rgba(0,175,185,1) 0%, rgba(60,232,170,1) 100%);
+        width: 100%;
+        height: 20%;
+        border-radius: 0 0 30px 30px;
+
+    }
+}
+
+.login-greeting {
     color: #eaeaea;
     font-family: Didot serif;
     font-weight: lighter;
@@ -16,14 +27,34 @@
 
 }
 
-.login-text {
+@media (device-width < 430px) {
+    .login-greeting {
+        color: #eaeaea;
+        font-family: Didot serif;
+        font-weight: lighter;
+        font-size: 30px;
+
+    }
+}
+
+.login-login-text {
     margin-top: 40%;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.instructions {
+@media (device-width < 430px) {
+    .login-login-text {
+        margin-top: 6%;
+        margin-bottom: 6%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.login-instructions {
     color: #eaeaea;
     font-family: Didot serif;
     font-weight: lighter;
@@ -32,7 +63,18 @@
 
 }
 
-.back-button {
+@media (device-width < 430px) {
+    .login-instructions {
+        color: #eaeaea;
+        font-family: Didot serif;
+        font-weight: lighter;
+        font-size: 19px;
+        padding: 0 10px 0 10px;
+
+    }
+}
+
+.login-back-button {
     background-color: transparent;
     border-color: transparent;
     color: #eaeaea;
@@ -42,7 +84,18 @@
 
 }
 
-.login-title {
+@media (device-width < 430px) {
+    .login-back-button {
+        background-color: transparent;
+        border-color: transparent;
+        color: #eaeaea;
+        font-size: 14px;
+        margin-top: 55px;
+        cursor: pointer;
+    }
+}
+
+.login-login-title {
     color: #00AFB9;
     font-family: Didot serif;
     font-weight: bold;
@@ -50,7 +103,17 @@
     margin-top: 20%;
 }
 
-.login-form-container {
+@media (device-width < 430px) {
+    .login-login-title {
+        color: #00AFB9;
+        font-family: Didot serif;
+        font-weight: bold;
+        font-size: 30px;
+        margin-top: 10%;
+    }
+}
+
+.login-login-form-container {
     width: 58%;
     display: flex;
     flex-direction: column;
@@ -58,12 +121,35 @@
 
 }
 
-.login-page {
+@media (device-width < 430px) {
+    .login-login-form-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+
+    }
+}
+
+.login-login-page {
+    width: 100%;
     display: flex;
 
 }
 
-.input {
+
+@media (device-width < 430px) {
+    .login-login-page {
+        display: flex;
+        flex-direction: column;
+
+
+    }
+}
+
+
+.login-input {
     background-color: #F5F5F5;
     border-radius: 10px;
     border-color: transparent;
@@ -71,29 +157,75 @@
     width: 300px;
 }
 
-.input-container {
+.login-input-container {
     display: flex;
     flex-direction: column;
     grid-row-gap: 15px;
 }
 
-.button-container {
-    margin-top: 20px;
+@media (device-width < 430px) {
+    .login-input-container {
+        display: flex;
+        flex-direction: column;
+        grid-row-gap: 15px;
 
+    }
 }
 
-.button {
+.login-button-container {
+    margin-top: 20px;
+    width: inherit;
+    display: flex;
+    justify-content: space-between;
+    gap: 40%;
+}
+
+@media (device-width < 430px) {
+    .login-button-container {
+        margin-top: 20px;
+        width: inherit;
+        display: flex;
+        flex-direction: column;
+
+    }
+}
+
+.login-button {
     background-color: transparent;
     border-color: transparent;
     color: #00AFB9;
     font-size: 20px;
     cursor: pointer;
+
 }
 
-.button-forgot {
+@media (device-width < 430px) {
+    .login-button {
+        background-color: transparent;
+        border-color: transparent;
+        color: #00AFB9;
+        font-size: 20px;
+        cursor: pointer;
+
+    }
+}
+
+.login-button-forgot {
     background-color: transparent;
     border-color: transparent;
     color: #00AFB9;
     font-size: 15px;
     cursor: pointer;
+}
+
+@media (device-width < 430px) {
+    .login-button-forgot {
+        background-color: transparent;
+        border-color: transparent;
+        color: #00AFB9;
+        font-size: 13px;
+        cursor: pointer;
+        align-self: flex-start;
+        margin-bottom: 30px;
+    }
 }

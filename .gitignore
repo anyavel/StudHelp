@@ -1,5 +1,5 @@
 .idea
 .vscode
 
-./Server/node_modules
-./client/node_modules
+Server/node_modules
+client/node_modules

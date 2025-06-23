@@ -1,18 +1,35 @@
-.container-main {
+.main-container-main {
     background: rgb(0,175,185);
     background: linear-gradient(160deg, rgba(0,175,185,1) 0%, rgba(60,232,170,1) 100%);
     height: 100vh;
 }
 
-.menu {
+@media (device-width < 600px) {
+    .main-container-main {
+        background: #c1e0df;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+}
+
+.main-menu {
     display: flex;
     flex-direction: column;
     width: 14%;
     align-items: flex-start;
-    
+
 }
 
-.logo {
+@media (device-width < 600px) {
+    .main-menu {
+        display: flex;
+        flex-direction: row;
+
+    }
+}
+
+.main-logo {
     color: #eaeaea;
     font-size: 32px;
     font-family: Didot serif;
@@ -20,7 +37,18 @@
     margin-left: 30%;
 }
 
-.menu-items {
+@media (device-width < 600px) {
+    .main-logo {
+        color: #eaeaea;
+        font-size: 1px;
+        font-family: Didot serif;
+        font-weight: normal;
+        margin-left: 0;
+        visibility: hidden;
+    }
+}
+
+.main-menu-items {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -28,13 +56,20 @@
     row-gap: 7px;
 }
 
-.container-main {
+@media (device-width < 600px) {
+    .main-menu-items {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+.main-container-main {
     display: flex;
     column-gap: 5%;
 
 }
 
-.menu-item {
+.main-menu-item {
     background-color: transparent;
     border-color: transparent;
     color: #eaeaea;
@@ -46,7 +81,49 @@
     margin-left: 7px;
 }
 
-.board {
+@media (device-width < 600px) {
+    .main-menu-item {
+        background-color: transparent;
+        border-color: transparent;
+        color: #08858e;
+        font-size: 15px;
+        cursor: pointer;
+        font-family: Didot serif;
+        font-weight: normal;
+        padding: 3px 0 3px 0;
+        margin-left: 7px;
+    }
+}
+
+@media (device-width <= 450px) and (device-width > 350px) {
+    .main-menu-item {
+        background-color: transparent;
+        border-color: transparent;
+        color: #08858e;
+        font-size: 18px;
+        cursor: pointer;
+        font-family: Didot serif;
+        font-weight: normal;
+        padding: 3px 0 3px 0;
+        margin-left: 7px;
+    }
+}
+
+@media (device-width < 600px) and (device-width > 450px) {
+    .main-menu-item {
+        background-color: transparent;
+        border-color: transparent;
+        color: #08858e;
+        font-size: 22px;
+        cursor: pointer;
+        font-family: Didot serif;
+        font-weight: normal;
+        padding: 3px 0 3px 0;
+        margin-left: 7px;
+    }
+}
+
+.main-board {
     margin: 10px;
     background-color: #F5F5F5;
     opacity: 0.87;
@@ -54,7 +131,21 @@
     border-radius: 20px;
 }
 
-.page-title {
+@media (device-width < 600px) {
+    .main-board {
+        background: rgb(0,175,185);
+        background: linear-gradient(160deg, rgba(0,175,185,1) 0%, rgba(60,232,170,1) 100%);
+        margin: 10px 0 0 0;
+        background-color: #F5F5F5;
+        opacity: 100%;
+        width: 100%;
+        border-radius: 0;
+        height: 100vh;
+
+    }
+}
+
+.main-page-title {
     color: #008A92;
     font-size: 30px;
     font-family: Didot serif;
@@ -62,7 +153,17 @@
     padding-left: 35px;
 }
 
-.name-info {
+@media (device-width < 600px) {
+    .main-page-title {
+        color: #F5F5F5;
+        font-size: 30px;
+        font-family: Didot serif;
+        font-weight: bold;
+        padding-left: 0;
+    }
+}
+
+.main-name-info {
     color: #545555;
     font-size: 20px;
     font-family: Didot serif;
@@ -74,12 +175,35 @@
 
 }
 
-.top-content {
+@media (device-width < 600px) {
+    .main-name-info {
+        color: #545555;
+        font-size: 2px;
+        font-family: Didot serif;
+        font-weight: normal;
+        display: flex;
+        justify-content: space-between;
+        column-gap: 7px;
+        padding: 0;
+        visibility: hidden;
+
+    }
+}
+
+.main-top-content {
     display: flex;
     justify-content: space-between;
 }
 
-.announcement {
+
+@media (device-width < 600px) {
+    .main-top-content {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.main-announcement {
     background-color: #FFFFFF;
     border-radius: 10px;
     opacity: 1;
@@ -88,7 +212,19 @@
 
 }
 
-.announcements {
+@media (device-width < 600px) {
+    .main-announcement {
+        background-color: #FFFFFF;
+        border-radius: 15px;
+        opacity: 1;
+        border-color: transparent;
+        cursor: pointer;
+        display: flex;
+        align-items: start;
+    }
+}
+
+.main-announcements {
 
     display: flex;
     flex-direction: column;
@@ -97,15 +233,36 @@
 
 }
 
-.announcement-title {
+@media (device-width < 600px) {
+    .main-announcements {
+
+        display: flex;
+        flex-direction: column;
+        margin: 0 10% 0 10%;
+        row-gap: 20px;
+
+    }
+}
+
+.main-announcement-title {
     color: #3b3838;
-    font-size: 25px;
+    font-size: 22px;
     font-family: Didot serif;
     font-weight: normal;
     margin: 15px;
 }
 
-.announcement-text {
+@media (device-width < 600px) {
+    .main-announcement-title {
+        color: #3b3838;
+        font-size: 18px;
+        font-family: Didot serif;
+        font-weight: normal;
+        margin: 8px;
+    }
+}
+
+.main-announcement-text {
     color: #000000;
     font-size: 15px;
     font-family: Didot serif;
@@ -113,7 +270,7 @@
     margin: 15px;
 }
 
-.add-announcement {
+.main-add-announcement {
     border-color: transparent;
     background-color: #009EA7;
     width: 63px;
@@ -123,14 +280,38 @@
     cursor: pointer;
 }
 
-.button-add-placement {
+@media (device-width < 600px) {
+    .main-add-announcement {
+        border-color: transparent;
+        background-color: #009EA7;
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        color: #FFFFFF;
+        font-size: 40px;
+        cursor: pointer;
+    }
+}
+
+.main-button-add-placement {
     display: flex;
     justify-content: flex-end;
     margin-right: 5%;
 
 }
 
-.checked-menu-item {
+@media (device-width < 600px) {
+    .main-button-add-placement {
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 10%;
+        margin-top: 5%;
+        margin-bottom: 2%;
+
+    }
+}
+
+.main-checked-menu-item {
     background-color: #F5F5F5;
     box-shadow: 2px 5px 5px #727171;
     border-color: transparent;
@@ -139,7 +320,19 @@
     height: 20px;
 }
 
-.menu-item-container {
+@media (device-width < 600px) {
+    .main-checked-menu-item {
+        background-color: transparent;
+        box-shadow: 2px 5px 5px #727171;
+        border-color: transparent;
+        border-radius: 0 10px 10px 0;
+        width: 1px;
+        height: 2px;
+        visibility: hidden;
+    }
+}
+
+.main-menu-item-container {
     display: flex;
     justify-content: center;
     align-items: center;

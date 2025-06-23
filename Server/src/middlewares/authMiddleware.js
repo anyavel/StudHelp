@@ -2,6 +2,7 @@
 // const tokenServices = require('../services/tokenService');
 import ApiError from "../errors/apiError.js";
 import { tokenService } from "../services/tokenService.js";
+import { userService } from "../services/userService.js";
 
 class AuthMiddleware {
 
@@ -25,6 +26,13 @@ class AuthMiddleware {
         } catch (e) {
             next(e);
         }
+    }
+
+    async checkEmailVerified(req, res, next) {
+        const { userId } = res.locals.payload;
+        const user = await userService.getUserById(userId);
+        if(!user || !user.emailVerified) return next(new ApiError('Непідтверджена пошта!', 401));
+        next();
     }
 
     async checkRefreshToken(req, res, next) {

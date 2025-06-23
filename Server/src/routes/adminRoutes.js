@@ -10,6 +10,7 @@ import {adminController} from '../controllers/adminController.js';
 const router = new Router();
 
 router.post('/user', authMiddleware.checkAccessToken, authMiddleware.checkIsAdmin, adminController.createUser);
+router.get('/user', authMiddleware.checkAccessToken, authMiddleware.checkIsAdmin, adminController.getStudents);
 
 // module.exports = router;
 export const adminRouter = router;

@@ -22,25 +22,31 @@ export const Login = () => {
         setLoginData(p => ({ ...p, [e.target.name]: e.target.value }));
     }
 
+    const handleForgetPassword = (e) => {
+        // e.preventDefault();
+        // navigate('/request-password-reset')
+    }
+
     return (
-        <div className="login-page">
-            <div className="text-container">
-                <button className="back-button">Назад</button>
-                <div className="login-text">
-                    <h1 className="greeting">З поверненням!</h1>
-                    <h2 className="instructions">Увійдіть в акаунт, щоб продовжити</h2>
+        <div className="login-login-page">
+            <div className="login-text-container">
+                <button className="login-back-button">Назад</button>
+                <div className="login-login-text">
+                    <h1 className="login-greeting">З поверненням!</h1>
+                    <h2 className="login-instructions">Увійдіть в акаунт, щоб продовжити</h2>
                 </div>
             </div>
-            <div className="login-form-container">
-                <h1 className="login-title">Вхід</h1>
+
+            <div className="login-login-form-container">
+                <h1 className="login-login-title">Вхід</h1>
                 <form onSubmit={handleSubmit}>
-                    <div className="input-container">
+                    <div className="login-input-container">
                         <input value={loginData.email} onChange={handleChange} name="email" className="input" placeholder={"Електронна пошта"} />
                         <input value={loginData.password} onChange={handleChange} name="password" className="input" type="password" placeholder={"Пароль"} />
                     </div>
-                    <div className="button-container">
-                        <button className="button-forgot">Забули пароль?</button>
-                        <button className="button">Увійти</button>
+                    <div className="login-button-container">
+                        <button className="login-button-forgot" onClick={handleForgetPassword}>Забули пароль?</button>
+                        <button className="login-button">Увійти</button>
                     </div>
                 </form>
             </div>

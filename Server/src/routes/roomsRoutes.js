@@ -1,10 +1,8 @@
 import { Router } from "express";
 import {authMiddleware} from '../middlewares/authMiddleware.js';
-import { commonMiddleware } from '../middlewares/commonMiddleware.js';
+import {roomController} from "../controllers/roomController.js";
 
 const router = Router()
-//(req, res, next)
-//todo add validation with joi
-router.get('/')
+router.get('/', authMiddleware.checkAccessToken, authMiddleware.checkIsAdmin, roomController.getRooms)
 
-export const authRouter = router;
+export const roomRouter = router;

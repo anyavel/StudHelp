@@ -12,12 +12,51 @@
     padding: 0 30% 0 30%;
 }
 
+@media(device-width < 430px) {
+    .auth-container {
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 30% 0 0 0;
+    }
+}
+
+@media(device-width > 430px) and (device-width < 1024px) {
+    .auth-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10% 20% 10% 20%;
+    }
+}
+
 .auth-label {
     color: #eaeaea;
     font-size: 70px;
     font-family: Didot serif;
     font-weight: lighter;
     margin-top: 20%;
+}
+
+@media(device-width < 430px) {
+    .auth-label {
+        color: #eaeaea;
+        font-size: 40px;
+        font-family: Didot serif;
+        font-weight: lighter;
+        margin-top: 0;
+    }
+}
+
+@media(device-width > 430px) and (device-width < 1024px) {
+    .auth-label {
+        color: #eaeaea;
+        font-size: 50px;
+        font-family: Didot serif;
+        font-weight: lighter;
+        margin-top: 0;
+    }
 }
 
 .auth-label-container {
@@ -39,6 +78,19 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+@media(device-width < 430px) {
+    .auth-options-container {
+        width: 75%;
+        padding: 10% 0 15% 0;
+        background-color: #e3f1f1;
+        border-radius: 30px;
+        opacity: 0.8;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 .auth-buttons {
@@ -74,6 +126,61 @@
 
 }
 
+@media(device-width < 430px) {
+    .auth-button {
+        background: #ffffff;
+        border: 0;
+        border-radius: 12px;
+        color: #505252;
+        cursor: pointer;
+        display: inline-block;
+        font-family: Didot serif;
+        font-weight: lighter;
+        font-size: 15px;
+        line-height: 2.5;
+        outline: transparent;
+        padding: 0 1rem;
+        text-align: center;
+        text-decoration: none;
+        transition: box-shadow .2s ease-in-out;
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+        white-space: nowrap;
+        margin: 0;
+        opacity: 1;
+
+
+    }
+}
+
+@media(device-width > 430px) and (device-width < 1024px) {
+    .auth-button {
+        background: #ffffff;
+        border: 0;
+        border-radius: 12px;
+        color: #505252;
+        cursor: pointer;
+        display: inline-block;
+        font-family: Didot serif;
+        font-weight: lighter;
+        font-size: 15px;
+        line-height: 2.5;
+        outline: transparent;
+        padding: 0 1rem;
+        text-align: center;
+        text-decoration: none;
+        transition: box-shadow .2s ease-in-out;
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+        white-space: nowrap;
+        margin: 0;
+        opacity: 1;
+
+    }
+}
+
 .auth-button:not([disabled]):focus {
     box-shadow:
             0 0 2rem #f5f5f5,
@@ -95,4 +202,26 @@
     top: 70px;
     z-index: 2;
 
+}
+
+@media(device-width < 430px) {
+    .auth-icon {
+        width: 26%;
+        height: auto;
+        position: relative;
+        top: 40px;
+        z-index: 2;
+
+    }
+}
+
+@media(device-width > 430px) and (device-width <= 1300px) {
+    .auth-icon {
+        width: 26%;
+        height: auto;
+        position: relative;
+        top: 40px;
+        z-index: 2;
+
+    }
 }

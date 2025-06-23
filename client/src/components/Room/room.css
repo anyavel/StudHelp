@@ -6,7 +6,16 @@
     column-gap: 5%;
 }
 
-.menu {
+@media (device-width < 600px) {
+    .room-container {
+        background: #c1e0df;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+}
+
+.room-menu {
     display: flex;
     flex-direction: column;
    
@@ -14,7 +23,15 @@
 
 }
 
-.logo {
+@media (device-width < 600px) {
+    .room-menu {
+        display: flex;
+        flex-direction: row;
+
+    }
+}
+
+.room-logo {
     color: #eaeaea;
     font-size: 38px;
     font-family: Didot serif;
@@ -22,7 +39,18 @@
     margin-left: 30%;
 }
 
-.menu-items {
+@media (device-width < 600px) {
+    .room-logo {
+        color: #eaeaea;
+        font-size: 1px;
+        font-family: Didot serif;
+        font-weight: normal;
+        margin-left: 0;
+        visibility: hidden;
+    }
+}
+
+.room-menu-items {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -30,7 +58,14 @@
     row-gap: 7px;
 }
 
-.menu-item {
+@media (device-width < 600px) {
+    .room-menu-items {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+.room-menu-item {
     background-color: transparent;
     border-color: transparent;
     color: #eaeaea;
@@ -42,6 +77,48 @@
     margin-left: 7px;
 }
 
+@media (device-width <= 600px) {
+    .room-menu-item {
+        background-color: transparent;
+        border-color: transparent;
+        color: #08858e;
+        font-size: 15px;
+        cursor: pointer;
+        font-family: Didot serif;
+        font-weight: normal;
+        padding: 3px 0 3px 0;
+        margin-left: 7px;
+    }
+}
+
+@media (device-width <= 450px) and (device-width > 350px) {
+    .room-menu-item {
+        background-color: transparent;
+        border-color: transparent;
+        color: #08858e;
+        font-size: 18px;
+        cursor: pointer;
+        font-family: Didot serif;
+        font-weight: normal;
+        padding: 3px 0 3px 0;
+        margin-left: 7px;
+    }
+}
+
+@media (device-width < 600px) and (device-width > 450px) {
+    .room-menu-item {
+        background-color: transparent;
+        border-color: transparent;
+        color: #08858e;
+        font-size: 22px;
+        cursor: pointer;
+        font-family: Didot serif;
+        font-weight: normal;
+        padding: 3px 0 3px 0;
+        margin-left: 7px;
+    }
+}
+
 .board-room {
     margin: 10px;
     background-color: #F5F5F5;
@@ -51,7 +128,21 @@
     height: auto;
 }
 
-.page-title {
+@media (device-width < 600px) {
+    .board-room {
+        background: rgb(0,175,185);
+        background: linear-gradient(160deg, rgba(0,175,185,1) 0%, rgba(60,232,170,1) 100%);
+        margin: 10px 0 0 0;
+        background-color: #F5F5F5;
+        opacity: 100%;
+        width: 100%;
+        border-radius: 0;
+        height: 100vh;
+
+    }
+}
+
+.room-page-title {
     color: #008A92;
     font-size: 30px;
     font-family: Didot serif;
@@ -59,7 +150,17 @@
     padding-left: 35px;
 }
 
-.name-info {
+@media (device-width < 600px) {
+    .room-page-title {
+        color: #F5F5F5;
+        font-size: 30px;
+        font-family: Didot serif;
+        font-weight: bold;
+        padding-left: 0;
+    }
+}
+
+.room-name-info {
     color: #545555;
     font-size: 20px;
     font-family: Didot serif;
@@ -71,10 +172,32 @@
 
 }
 
-.top-content {
+@media (device-width < 600px) {
+    .room-name-info {
+        color: #545555;
+        font-size: 2px;
+        font-family: Didot serif;
+        font-weight: normal;
+        display: flex;
+        justify-content: space-between;
+        column-gap: 7px;
+        padding: 0;
+        visibility: hidden;
+
+    }
+}
+
+.room-top-content {
     display: flex;
     justify-content: space-between;
     width: 100%;
+}
+
+@media (device-width < 600px) {
+    .room-top-content {
+        display: flex;
+        justify-content: center;
+    }
 }
 
 .room-info-title {
@@ -154,13 +277,25 @@
     box-shadow: 0 2px #b0b7b6;
 }
 
-.checked-menu-item {
+.room-checked-menu-item {
     background-color: #F5F5F5;
     box-shadow: 2px 5px 5px #727171;
     border-color: transparent;
     border-radius: 0 10px 10px 0;
     width: 15px;
     height: 20px;
+}
+
+@media (device-width < 600px) {
+    .room-checked-menu-item {
+        background-color: transparent;
+        box-shadow: 2px 5px 5px #727171;
+        border-color: transparent;
+        border-radius: 0 10px 10px 0;
+        width: 1px;
+        height: 2px;
+        visibility: hidden;
+    }
 }
 
 .menu-item-container {

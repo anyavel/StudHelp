@@ -83,6 +83,12 @@ const userSchema = new Schema(
             required: true,
             message: 'Пароль має містити 6-20 символів, мінімум 1 велику букву та мінімум 1 спецсимвол'
         },
+        emailVerified: {
+          type: Boolean,
+          required: true,
+          default: false
+
+        },
         room: {
             type: Schema.Types.ObjectId,
             ref: 'Room'

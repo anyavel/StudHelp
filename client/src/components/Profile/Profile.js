@@ -3,6 +3,7 @@ import './profile.css';
 import profile from '../../img/profile-placeholder.png';
 import { useNavigate } from "react-router-dom";
 import { authService } from '../../services';
+import {Navbar} from "../Navbar/Navbar";
 
 export const Profile = () => {
     const [user, setUser] = useState(null);
@@ -52,20 +53,8 @@ export const Profile = () => {
 
     return (
         <div className={"room-container"}>
-            <div className="menu">
-                <h1 className={"logo"}>Stud Help</h1>
-                <div className="menu-items">
-                    <button className={"menu-item"} onClick={handleClickMain}>Головна</button>
-                    <button className={"menu-item"} onClick={handleClickHelp}>Допомога</button>
-                    <button className={"menu-item"} onClick={handleClickRoom}>Кімната</button>
-                    <div className={"menu-item-container"}>
-                        <input readOnly={true} className={"checked-menu-item"} />
-                        <button className={"menu-item"} onClick={handleClickProfile}>Профіль</button>
-                    </div>
-
-                </div>
-            </div>
-            <div className={"board-room"}>
+            <Navbar></Navbar>
+            <div className={"profile-board"}>
                 <div className={"profile-picture-container"}>
                     <img src={profile} className={"profile-picture"} />
                     <button className={"change-profile-picture"}>Змінити фото</button>

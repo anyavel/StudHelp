@@ -8,6 +8,13 @@
     
 }
 
+.article-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .article-board {
     background-color: #F5F5F5;
     opacity: 0.87;
@@ -25,7 +32,6 @@
     color: #008A92;
     font-family: Didot serif;
     font-weight: bold;
-    margin-left: 40%;
 }
 
 .article-text {

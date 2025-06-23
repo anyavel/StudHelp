@@ -20,7 +20,7 @@ export const HelpLinks = () => {
                                 <b>Магазинчик на 1 поверсі: </b> @stud_shop3
                             </li>
                             <li>
-                                <b>Пральні машинки: </b> <a href='https://lcapp.bilantek.com/#homepage'> https://lcapp.bilantek.com/#homepage </a> код 744, 743
+                                <b>Пральні машинки: </b> <a href='https://lcapp.bilantek.com/#homepage'> Посилання тут </a> код 744, 743
                             </li>
                         </ul>
                     </div>

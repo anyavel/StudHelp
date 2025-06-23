@@ -47,22 +47,22 @@ export const Help = () => {
     return (
 
         <div className="container-help">
-            <div className="menu">
-                <h1 className={"logo"}>Stud Help</h1>
-                <div className="menu-items">
-                    <button className={"menu-item"} onClick={handleClickMain}>Головна</button>
+            <div className="help-menu">
+                <h1 className={"help-logo"}>Stud Help</h1>
+                <div className="help-menu-items">
+                    <button className={"help-menu-item"} onClick={handleClickMain}>Головна</button>
                     <div className={"menu-item-container"}>
-                        <input readOnly={true} className={"checked-menu-item"}/>
-                        <button className={"menu-item"} onClick={handleClickHelp}>Допомога</button>
+                        <input readOnly={true} className={"help-checked-menu-item"}/>
+                        <button className={"help-menu-item"} onClick={handleClickHelp}>Допомога</button>
                     </div>
-                    <button className={"menu-item"} onClick={handleClickRoom}>Кімната</button>
-                    <button className={"menu-item"} onClick={handleClickProfile}>Профіль</button>
+                    <button className={"help-menu-item"} onClick={handleClickRoom}>Кімната</button>
+                    <button className={"help-menu-item"} onClick={handleClickProfile}>Профіль</button>
                 </div>
             </div>
             <div className={"board-help"}>
-                <div className={"top-content"}>
-                    <h1 className={"page-title"}>Теми питань</h1>
-                    {user && <div className={"name-info"}>
+                <div className={"help-top-content"}>
+                    <h1 className={"help-page-title"}>Теми питань</h1>
+                    {user && <div className={"help-name-info"}>
                         <div>{user.firstName}</div>
                         <div>{user.lastName}</div>
                     </div>}

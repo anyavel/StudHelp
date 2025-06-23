@@ -1,6 +1,5 @@
 // const express = require('express');
 import express from 'express';
-const app = express();
 // const fileUpload = require('express-fileupload');
 import fileUpload from 'express-fileupload';
 import mongoose from 'mongoose';
@@ -17,7 +16,17 @@ import { authRouter } from'./routes/authRoutes.js';
 import { announcementsRouter } from './routes/announcementsRoutes.js';
 // const adminRouter = require('./routes/adminRoutes');
 import {adminRouter} from './routes/adminRoutes.js';
-//body parsers
+import {roomRouter} from './routes/roomsRoutes.js';
+
+const app = express();
+const corsOption = {
+    credentials: true,
+    origin: ['http://localhost:3000', 'http://localhost:80']
+}
+
+// app.options('*', cors(corsOption));
+app.use(cors(corsOption));
+
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use('/files', express.static(path.join(process.cwd(), 'static')))
@@ -25,11 +34,11 @@ app.use(fileUpload({
     limits: { fileSize: 10 * 1024 * 1024 },
 }))
 
-app.use(cors());
 //register routes
 app.use("/auth", authRouter);
 app.use("/announcements", announcementsRouter);
 app.use("/admin", adminRouter);
+app.use("/room", roomRouter);
 
 //error middleware (handles next() with argument)
 app.use((err, req, res, next) => {

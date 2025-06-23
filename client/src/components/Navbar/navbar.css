@@ -1,0 +1,132 @@
+.menu {
+    display: flex;
+    flex-direction: column;
+    width: 18%;
+
+}
+
+@media (device-width < 600px) {
+    .menu {
+        display: flex;
+        flex-direction: row;
+
+    }
+}
+
+.logo {
+    color: #eaeaea;
+    font-size: 35px;
+    font-family: Didot serif;
+    font-weight: normal;
+    margin-left: 25%;
+}
+
+@media (device-width < 600px) {
+    .logo {
+        color: #eaeaea;
+        font-size: 1px;
+        font-family: Didot serif;
+        font-weight: normal;
+        margin-left: 0;
+        visibility: hidden;
+    }
+}
+
+.menu-items {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 30px;
+    row-gap: 7px;
+}
+
+@media (device-width < 600px) {
+    .menu-items {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+.menu-item {
+    background-color: transparent;
+    border-color: transparent;
+    color: #eaeaea;
+    font-size: 27px;
+    cursor: pointer;
+    font-family: Didot serif;
+    font-weight: normal;
+    padding: 3px 0 3px 0;
+    margin-left: 7px;
+}
+
+@media (device-width < 600px) {
+    .menu-item {
+        background-color: transparent;
+        border-color: transparent;
+        color: #08858e;
+        font-size: 15px;
+        cursor: pointer;
+        font-family: Didot serif;
+        font-weight: normal;
+        padding: 3px 0 3px 0;
+        margin-left: 7px;
+    }
+}
+
+@media (device-width <= 450px) and (device-width > 350px) {
+    .menu-item {
+        background-color: transparent;
+        border-color: transparent;
+        color: #08858e;
+        font-size: 18px;
+        cursor: pointer;
+        font-family: Didot serif;
+        font-weight: normal;
+        padding: 3px 0 3px 0;
+        margin-left: 7px;
+    }
+}
+
+@media (device-width < 600px) and (device-width > 450px) {
+    .menu-item {
+        background-color: transparent;
+        border-color: transparent;
+        color: #08858e;
+        font-size: 22px;
+        cursor: pointer;
+        font-family: Didot serif;
+        font-weight: normal;
+        padding: 3px 0 3px 0;
+        margin-left: 7px;
+    }
+}
+
+
+
+.checked-menu-item {
+    background-color: #F5F5F5;
+    box-shadow: 2px 5px 5px #727171;
+    border-color: transparent;
+    border-radius: 0 10px 10px 0;
+    width: 15px;
+    height: 20px;
+}
+
+@media (device-width < 600px) {
+    .checked-menu-item {
+        background-color: transparent;
+        box-shadow: 2px 5px 5px #727171;
+        border-color: transparent;
+        border-radius: 0 10px 10px 0;
+        width: 1px;
+        height: 2px;
+        visibility: hidden;
+    }
+}
+
+.menu-item-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 5px;
+}

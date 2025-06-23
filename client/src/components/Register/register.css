@@ -8,12 +8,33 @@
 
 }
 
+@media (device-width < 560px) {
+    .text-container {
+        background: rgb(0,175,185);
+        background: linear-gradient(160deg, rgba(0,175,185,1) 0%, rgba(60,232,170,1) 100%);
+        width: 100%;
+        height: 20%;
+        border-radius: 0 0 30px 30px;
+
+    }
+}
+
 .greeting {
     color: #eaeaea;
     font-family: Didot serif;
     font-weight: lighter;
     font-size: 45px;
 
+}
+
+@media (device-width < 560px) {
+    .greeting {
+        color: #eaeaea;
+        font-family: Didot serif;
+        font-weight: lighter;
+        font-size: 30px;
+
+    }
 }
 
 .login-text {
@@ -23,6 +44,16 @@
     align-items: center;
 }
 
+@media (device-width < 560px) {
+    .login-text {
+        margin-top: 6%;
+        margin-bottom: 6%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
 .instructions {
     color: #eaeaea;
     font-family: Didot serif;
@@ -30,6 +61,17 @@
     font-size: 25px;
     padding: 0 10px 0 10px;
 
+}
+
+@media (device-width < 560px) {
+    .instructions {
+        color: #eaeaea;
+        font-family: Didot serif;
+        font-weight: lighter;
+        font-size: 19px;
+        padding: 0 10px 0 10px;
+
+    }
 }
 
 .back-button {
@@ -42,12 +84,33 @@
 
 }
 
+@media (device-width < 560px) {
+    .back-button {
+        background-color: transparent;
+        border-color: transparent;
+        color: #eaeaea;
+        font-size: 14px;
+        margin-top: 55px;
+        cursor: pointer;
+    }
+}
+
 .login-title {
     color: #00AFB9;
     font-family: Didot serif;
     font-weight: bold;
     font-size: 40px;
     margin-top: 20%;
+}
+
+@media (device-width < 560px) {
+    .login-title {
+        color: #00AFB9;
+        font-family: Didot serif;
+        font-weight: bold;
+        font-size: 30px;
+        margin-top: 10%;
+    }
 }
 
 .login-form-container {
@@ -57,10 +120,29 @@
     align-items: center;
 
 }
+@media (device-width < 560px) {
+    .login-form-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+
+    }
+}
 
 .login-page {
     display: flex;
 
+}
+
+@media (device-width < 560px) {
+    .login-page {
+        display: flex;
+        flex-direction: column;
+
+
+    }
 }
 
 .input {
@@ -77,11 +159,30 @@
     grid-row-gap: 15px;
 }
 
+@media (device-width < 560px) {
+    .input-container {
+        display: flex;
+        flex-direction: column;
+        grid-row-gap: 15px;
+
+    }
+}
+
 .button-container {
     margin-top: 20px;
     display: flex;
     justify-content: flex-end;
     width: inherit;
+}
+
+@media (device-width < 560px) {
+    .button-container {
+        margin-top: 20px;
+        width: inherit;
+        display: flex;
+        flex-direction: column;
+
+    }
 }
 
 .button {
@@ -90,4 +191,15 @@
     color: #00AFB9;
     font-size: 20px;
     cursor: pointer;
+}
+
+@media (device-width < 560px) {
+    .button {
+        background-color: transparent;
+        border-color: transparent;
+        color: #00AFB9;
+        font-size: 20px;
+        cursor: pointer;
+
+    }
 }

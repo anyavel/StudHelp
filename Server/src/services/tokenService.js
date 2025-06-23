@@ -17,6 +17,10 @@ class TokenServices {
         };
     }
 
+    generateToken(payload, secret, options) {
+        return jwt.sign(payload, secret, options);
+    }
+
     checkToken(token, tokenType) {
         try {
             let secret = "";
